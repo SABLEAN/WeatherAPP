@@ -10,7 +10,9 @@ object Dependencies {
   val tapirCore = "com.softwaremill.sttp.tapir" %% "tapir-core" % versionTapir
   val tapirJsonCirce = "com.softwaremill.sttp.tapir" %% "tapir-json-circe" % versionTapir
   val tapirHttp4sServer = "com.softwaremill.sttp.tapir" %% "tapir-http4s-server" % versionTapir
+  val tapir = "com.softwaremill.sttp.tapir" %% "tapir-sttp-client" % versionTapir
+  val b = "com.softwaremill.sttp.client3" %% "async-http-client-backend-cats" % "3.3.0"
 
 
-  val all = Seq(catsCore,catsEffect,tapirCore,tapirJsonCirce,tapirHttp4sServer)
+  val all = Seq(catsCore,catsEffect,tapirCore,tapirJsonCirce,tapirHttp4sServer,tapir,b)
 }
